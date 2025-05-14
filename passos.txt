@@ -1,0 +1,20 @@
+Configuração do GIT:
+git config --global user.name CauaMaximo013
+git config --global user.email maximocaua13@gmail.com
+
+Criar um Projeto:
+ng new shakirflix
+
+Executar o projeto:
+cd shakirflix
+ng serve -o
+
+
+Criar novos componentes:
+ng g c pages/home
+ng g c pages/search
+ng g c pages/details
+
+
+Criar um Serviço:
+ng g s services/movieApi
