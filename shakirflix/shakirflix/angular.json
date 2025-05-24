@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "shakirflix": {
+    "RaiezenFlix": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/shakirflix",
+            "outputPath": "dist/raiezen-flix",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -59,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "shakirflix:build:production"
+              "buildTarget": "RaiezenFlix:build:production"
             },
             "development": {
-              "buildTarget": "shakirflix:build:development"
+              "buildTarget": "RaiezenFlix:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -94,6 +94,6 @@
     }
   },
   "cli": {
-    "analytics": "21ed4139-63d7-425b-8fa1-4a83436b46f8"
+    "analytics": "528b91ff-6e52-4483-a672-d3224f4edbf9"
   }
 }
