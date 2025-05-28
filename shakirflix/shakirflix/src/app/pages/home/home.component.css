@@ -1,8 +1,0 @@
-#carouselBanner {
-    height: 100vh;
-}
-
-#carouselBanner .carousel-item img {
-    height: 100vh;
-    object-fit: cover;
-}

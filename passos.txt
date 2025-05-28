@@ -18,3 +18,7 @@ ng g c pages/details
 
 Criar um Serviço:
 ng g s services/movieApi
+
+Cria deretiva
+
+ ng g d directives/auto-scroll

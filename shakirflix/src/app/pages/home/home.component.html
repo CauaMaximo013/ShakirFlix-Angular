@@ -25,3 +25,55 @@
         </button>
     </div>
 </div>
+
+<div class="container my-5">
+    <div class="row mb-5">
+        <h4 class="text-white">Filmes em Destaque</h4>
+        <div class="rowposter mt-1" #trendingMovies autoScroll>
+            <a href="#" *ngFor="let m of trendingMovieResults">
+                <img src="https://image.tmdb.org/t/p/w500/{{ m.poster_path }}" alt="Capa do Filme">
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row mb-5">
+        <h4 class="text-white">Serie em Destaque</h4>
+        <div class="rowposter mt-1" #trendingSerie autoScroll>
+            <a href="#" *ngFor="let m of trendingSerieResults">
+                <img src="https://image.tmdb.org/t/p/w500/{{ m.poster_path }}" alt="Capa do Filme">
+            </a>
+        </div>
+    </div>
+</div>
+<div class="container my-5">
+    <div class="row mb-5">
+        <h4 class="text-white">Filmes de ação mais populares</h4>
+        <div class="rowposter mt-1" #popularActionmovie autoScroll>
+            <a href="#" *ngFor="let m of popularActionMovieResults">
+                <img src="https://image.tmdb.org/t/p/w500/{{ m.poster_path }}" alt="Capa do Filme">
+            </a>
+        </div>
+    </div>
+</div>
+<div class="container my-5">
+    <div class="row mb-5">
+        <h4 class="text-white">Filmes de Comedia mais populares</h4>
+        <div class="rowposter mt-1" #popularComedymovie autoScroll>
+            <a href="#" *ngFor="let m of popularComedyMovieResults">
+                <img src="https://image.tmdb.org/t/p/w500/{{ m.poster_path }}" alt="Capa do Filme">
+            </a>
+        </div>
+    </div>
+</div>
+<div class="container my-5">
+    <div class="row mb-5">
+        <h4 class="text-white">Filmes de Fantasia mais populares</h4>
+        <div class="rowposter mt-1" #popularFantasymovie autoScroll>
+            <a href="#" *ngFor="let m of popularFantasyMovieResults">
+                <img src="https://image.tmdb.org/t/p/w500/{{ m.poster_path }}" alt="Capa do Filme">
+            </a>
+        </div>
+    </div>
+</div>
