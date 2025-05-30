@@ -13,7 +13,7 @@ export class AutoScrollDirective {
   private lastScrollTime: number = 0;
   private autoScrollInterval: any = null;
   private readonly scrollMargin: number = 200; // 200px de margem para ativar scroll automático
-  private readonly autoScrollSpeed: number = 10; // Velocidade do scroll automático
+  private readonly autoScrollSpeed: number = 2; // Velocidade do scroll automático
 
   constructor(private el: ElementRef, private renderer: Renderer2) {}
 

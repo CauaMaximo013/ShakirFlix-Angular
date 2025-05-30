@@ -1,4 +1,4 @@
-#carouselBnner {
+#carouselBanner {
     height: 100vh;
 }
 
@@ -17,7 +17,7 @@
 }
 
 .carousel-inner .carousel-caption h3 {
-    color: #e50941;
+    color: #E50914;
     font-weight: bolder;
     font-size: 32px;
 }
@@ -25,11 +25,10 @@
 @media only screen and (max-width: 500px) {
     .carousel-inner .carousel-caption {
         padding-left: 10px;
-    padding-right: 10px;
+        padding-right: 10px;
     }
-
     .carousel-inner .carousel-caption h3 {
-        font-size: 20;
+        font-size: 20px;
     }
 }
 
@@ -42,14 +41,13 @@
     padding: 20px;
     -webkit-overflow-scrolling: touch;
     will-change: transform;
-    
 }
 
 .rowposter a {
     cursor: pointer;
 }
 
-.rowposter::-webkit-scrollbar{
+.rowposter::-webkit-scrollbar {
     display: none;
 }
 
@@ -64,7 +62,7 @@
     transform: translateZ(0);
 }
 
-.rowposter a img:hover {
-    transform: scale(1.12);
+.rowposter a img:hover{
+    transform: sacle(1.12);
     z-index: 900;
 }

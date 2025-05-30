@@ -1,25 +1,27 @@
 <div class="container-fluid p-0">
     <div id="carouselBanner" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
-            
-            <div class="carousel-item" *ngFor="let b of bannerResults; let i = index"
-              [ngClass]="{active:i===0}" data-bs-interval="8000"
+
+            <div class="carousel-item" data-bs-interval="8000"
+                *ngFor="let b of bannerResults; let i = index"
+                [ngClass]="{active:i===0}"
             >
-                <img src="https://image.tmdb.org/t/p/original/{{ b.backdrop_path }}" 
-                  class="d-block w-100 opacity-75" alt="Capa de Mídia">
-                <div class="carousel-caption d-none d-md-block">
+                <img src="https://image.tmdb.org/t/p/original/{{b.backdrop_path }}"
+                 class="d-block w-100 opacity-75" alt="Capa Mídia">
+                <div class="carousel-caption">
                     <h3>{{ b.title ?? b.name }}</h3>
                     <p class="d-none d-md-block">{{ b.overview }}</p>
                 </div>
-            </div>    
-        
-        </div>
+            </div>
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner" data-bs-slide="prev">
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner"
+            data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner"
+            data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
@@ -35,43 +37,18 @@
             </a>
         </div>
     </div>
-</div>
-
-<div class="container my-5">
     <div class="row mb-5">
-        <h4 class="text-white">Serie em Destaque</h4>
-        <div class="rowposter mt-1" #trendingSerie autoScroll>
+        <h4 class="text-white">Series em Destaque</h4>
+        <div class="rowposter mt-1" #trendingSeries autoScroll>
             <a href="#" *ngFor="let m of trendingSerieResults">
-                <img src="https://image.tmdb.org/t/p/w500/{{ m.poster_path }}" alt="Capa do Filme">
+                <img src="https://image.tmdb.org/t/p/w500/{{ m.poster_path }}" alt="Capa da Serie">
             </a>
         </div>
     </div>
-</div>
-<div class="container my-5">
     <div class="row mb-5">
-        <h4 class="text-white">Filmes de ação mais populares</h4>
-        <div class="rowposter mt-1" #popularActionmovie autoScroll>
-            <a href="#" *ngFor="let m of popularActionMovieResults">
-                <img src="https://image.tmdb.org/t/p/w500/{{ m.poster_path }}" alt="Capa do Filme">
-            </a>
-        </div>
-    </div>
-</div>
-<div class="container my-5">
-    <div class="row mb-5">
-        <h4 class="text-white">Filmes de Comedia mais populares</h4>
-        <div class="rowposter mt-1" #popularComedymovie autoScroll>
-            <a href="#" *ngFor="let m of popularComedyMovieResults">
-                <img src="https://image.tmdb.org/t/p/w500/{{ m.poster_path }}" alt="Capa do Filme">
-            </a>
-        </div>
-    </div>
-</div>
-<div class="container my-5">
-    <div class="row mb-5">
-        <h4 class="text-white">Filmes de Fantasia mais populares</h4>
-        <div class="rowposter mt-1" #popularFantasymovie autoScroll>
-            <a href="#" *ngFor="let m of popularFantasyMovieResults">
+        <h4 class="text-white">Filmes de Animação Mais Populares</h4>
+        <div class="rowposter mt-1" #popularAnimationMovie autoScroll>
+            <a href="#" *ngFor="let m of popularAnimationMovieResults">
                 <img src="https://image.tmdb.org/t/p/w500/{{ m.poster_path }}" alt="Capa do Filme">
             </a>
         </div>
