@@ -38,4 +38,19 @@ export class MovieApiService {
     return this.http.get(`${this.baseUrl}/discover/movie?language=pt-br&with_genres=16&sort_by=popularity.desc`, this.options)
   }
 
+  // Detalhes do filme ou Série
+  mediaDetails(type: any, value: any): Observable<any> {
+    return this.http.get(`${this.baseUrl}/${type}/${value}?language=pt-br`, this.options)
+  }
+
+  // Trailers do filme ou Série
+  mediaTrailers(type: any, value: any): Observable<any> {
+    return this.http.get(`${this.baseUrl}/${type}/${value}/videos?language=pt-br`, this.options)
+  }
+
+  // Elenco do filme ou Série
+  mediaCast(type: any, value: any): Observable<any> {
+    return this.http.get(`${this.baseUrl}/${type}/${value}/credits?language=pt-br`, this.options)
+  }
+
 }
