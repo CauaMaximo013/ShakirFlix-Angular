@@ -53,4 +53,8 @@ export class MovieApiService {
     return this.http.get(`${this.baseUrl}/${type}/${value}/credits?language=pt-br`, this.options)
   }
 
+  // Buscar um ator ou atriz
+  personDetails(value: any) : Observable<any> {
+    return this.http.get(`${this.baseUrl}/person/${value}?language=pt-br`, this.options)
+  }
 }
