@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { MovieApiService } from '../../services/movie-api.service';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-person',
@@ -12,20 +12,20 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class PersonComponent {
 
-  constructor (
+  constructor(
     private service: MovieApiService,
-    private Router: ActivatedRoute
-  ){}
-  person:any;
+    private router: ActivatedRoute
+  ) {}
+
+  person: any;
 
   ngOnInit(): void {
-     let id = this.Router.snapshot.paramMap.get('id');
-     this.getPerson(id);
-    
+    let id = this.router.snapshot.paramMap.get('id');
+    this.getPerson(id);
   }
 
   getPerson(id: any) {
-    this.service.personDetails(id).subscribe((result)=> {
+    this.service.personDetails(id).subscribe((result) => {
       //console.log(result);
       this.person = result;
     })

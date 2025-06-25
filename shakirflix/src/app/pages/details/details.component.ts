@@ -22,7 +22,7 @@ export class DetailsComponent {
   trailers: any = [];
   cast: any = [];
 
-  ngOnInit(): void{
+  ngOnInit(): void {
     let id = this.router.snapshot.paramMap.get('id');
     let type = this.router.snapshot.paramMap.get('type');
     this.getMedia(type, id);
@@ -47,7 +47,7 @@ export class DetailsComponent {
 
   getSafeUrl(key: string): SafeResourceUrl {
     return this.sanitizer.bypassSecurityTrustResourceUrl(
-      'https://www.youtube.com/embed/' + key 
+      'https://www.youtube.com/embed/' + key
     );
   }
 

@@ -3,9 +3,9 @@
     padding: 15px 20px;
     font-weight: 600;
     background-color: white;
-    border-radius:50px;
-    font-size: 18px;
+    border-radius: 50px;
     border: #e50914 solid 2px;
+    font-size: 18px;
 }
 
 #pesquisar button {
@@ -16,16 +16,16 @@
     width: 60px;
     font-size: 20px;
     background-color: #e50914;
-    color:white;
-    border: #e50914 solid 2 px;
+    color: white;
+    border: #e50914 solid 2px;
 }
 
 .card {
-     background-color: black;
-     color: white;
-     border: 1px solid white;
-     border-radius: 20px;
-     cursor: pointer;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 .card-img-top {

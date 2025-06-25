@@ -18,7 +18,7 @@
 }
 
 .carousel-inner .carousel-caption h3 {
-    color: #E50914;
+    color: #e50914;
     font-weight: bolder;
     font-size: 32px;
 }
@@ -28,6 +28,7 @@
         padding-left: 10px;
         padding-right: 10px;
     }
+
     .carousel-inner .carousel-caption h3 {
         font-size: 20px;
     }
@@ -35,7 +36,7 @@
 
 .rowposter {
     display: flex;
-    overflow: hidden;
+    overflow-y: hidden;
     overflow-x: auto;
     scroll-behavior: smooth;
     cursor: default;
@@ -63,7 +64,7 @@
     transform: translateZ(0);
 }
 
-.rowposter a img:hover{
-    transform: sacle(1.12);
+.rowposter a img:hover {
+    transform: scale(1.12);
     z-index: 900;
 }
